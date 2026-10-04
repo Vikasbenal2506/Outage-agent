@@ -1,0 +1,33 @@
+{
+  "name": "outage-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "vite build && wrangler deploy",
+    "types": "wrangler types",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^3.0.62",
+    "@ai-sdk/react": "^4.0.130",
+    "@cloudflare/ai-chat": "latest",
+    "agents": "latest",
+    "ai": "latest",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "workers-ai-provider": "latest",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "latest",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "^5.6.0",
+    "vite": "latest",
+    "wrangler": "latest"
+  }
+}

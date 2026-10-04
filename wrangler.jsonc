@@ -1,0 +1,13 @@
+{
+  "name": "outage-agent",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-10-03",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": { "CF_ACCOUNT_ID": "54881f1eca0d78faac612514b7771e38" },
+  "assets": { "not_found_handling": "single-page-application" },
+  "durable_objects": {
+    "bindings": [{ "name": "OutageAgent", "class_name": "OutageAgent" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["OutageAgent"] }],
+  "observability": { "enabled": true }
+}

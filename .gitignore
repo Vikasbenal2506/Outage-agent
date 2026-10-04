@@ -1,0 +1,22 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+.wrangler/
+
+# Local secrets; keep the example templates trackable
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example
+
+# Generated files
+worker-configuration.d.ts
+*.tsbuildinfo
+
+# Local machine files
+.DS_Store
+Thumbs.db
+*.log
